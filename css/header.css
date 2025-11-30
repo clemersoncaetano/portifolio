@@ -1,28 +1,30 @@
-.header{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
+.header-menu {
+  list-style: none;
   display: flex;
-  justify-content: space-between;
+  gap: 20px; /* espaço entre os itens */
+  margin: 0;
+  padding: 0;
+}
+
+.header-menu li a {
+  text-decoration: none;
+  color:black ;
+  font-weight: 500;
+  transition: 0.3s;
+  font-size: 25px;
+
+}
+
+.header-menu li a:hover {
+  color: #ccc; 
+}
+
+header {
+  display: flex;
+  justify-content: flex-end; 
   align-items: center;
-
-}
-
-.header-menu{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-}
-
-.header-menu a{
-font-size: 1.125rem;
-line-height: 1.3;
-padding: 10px 20px;
-text-decoration: none;
-color: #141414;
-display: block;
-
+  padding: 30px;
+  background: white;
 }
 
 @media (max-width: 800px){
